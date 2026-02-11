@@ -1,0 +1,62 @@
+{
+  "name": "youtube-transcript-api",
+  "version": "1.0.0",
+  "description": "Official Node.js/TypeScript SDK for the YouTubeTranscript.dev API — extract, transcribe, and translate YouTube videos at scale.",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts --clean",
+    "dev": "tsup src/index.ts --format cjs,esm --dts --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "youtube",
+    "transcript",
+    "youtube-transcript",
+    "youtube-api",
+    "subtitles",
+    "captions",
+    "speech-to-text",
+    "asr",
+    "transcription",
+    "video-to-text",
+    "youtube-transcript-api",
+    "ai",
+    "batch",
+    "webhook"
+  ],
+  "author": "YouTubeTranscript.dev",
+  "license": "MIT",
+  "homepage": "https://youtubetranscript.dev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/youtubetranscript/youtube-transcript-api"
+  },
+  "bugs": {
+    "url": "https://github.com/youtubetranscript/youtube-transcript-api/issues"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.0",
+    "typescript": "^5.4.0",
+    "vitest": "^2.0.0"
+  }
+}
