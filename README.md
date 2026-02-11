@@ -251,7 +251,8 @@ const yt = new YouTubeTranscript({
 - 📖 [Full API Docs](https://youtubetranscript.dev/api-docs)
 - 📐 [OpenAPI Spec](https://youtubetranscript.dev/api-docs#openapi)
 - 💰 [Pricing](https://youtubetranscript.dev/pricing)
-- 🐛 [Issues](https://github.com/youtubetranscript/youtube-transcript-api/issues)
+- 🐛 [Issues & Feedback](https://github.com/youtubetranscript/youtube-transcript-api/issues)
+- 📝 [Examples & Docs Repo](https://github.com/youtubetranscript/youtube-transcript-api)
 
 ## License
 
