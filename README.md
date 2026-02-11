@@ -9,9 +9,9 @@
 </p>
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/youtube-transcript-api"><img src="https://img.shields.io/npm/v/youtube-transcript-api" alt="npm" /></a>
+  <a href="https://www.npmjs.com/package/youtube-audio-transcript-api"><img src="https://img.shields.io/npm/v/youtube-audio-transcript-api" alt="npm" /></a>
   <a href="https://youtubetranscript.dev"><img src="https://img.shields.io/badge/API-v2-brightgreen" alt="API Version" /></a>
-  <a href="https://github.com/youtubetranscript/youtube-transcript-api/blob/main/LICENSE"><img src="https://img.shields.io/npm/l/youtube-transcript-api" alt="License" /></a>
+  <a href="https://github.com/volodstaimi/youtube-transcript-sdk/blob/main/LICENSE"><img src="https://img.shields.io/npm/l/youtube-audio-transcript-api" alt="License" /></a>
 </p>
 
 ---
@@ -251,8 +251,8 @@ const yt = new YouTubeTranscript({
 - 📖 [Full API Docs](https://youtubetranscript.dev/api-docs)
 - 📐 [OpenAPI Spec](https://youtubetranscript.dev/api-docs#openapi)
 - 💰 [Pricing](https://youtubetranscript.dev/pricing)
-- 🐛 [Issues & Feedback](https://github.com/youtubetranscript/youtube-transcript-api/issues)
-- 📝 [Examples & Docs Repo](https://github.com/youtubetranscript/youtube-transcript-api)
+- 🐛 [Issues & Feedback](https://github.com/volodstaimi/Youtube-Transcript-API/issues)
+- 📝 [Examples & Docs Repo](https://github.com/volodstaimi/Youtube-Transcript-API)
 
 ## License
 
