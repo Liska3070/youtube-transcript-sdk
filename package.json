@@ -1,6 +1,6 @@
 {
   "name": "youtube-audio-transcript-api",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Official Node.js/TypeScript SDK for the YouTubeTranscript.dev API — extract, transcribe, and translate YouTube videos at scale.",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
